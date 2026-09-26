@@ -1,0 +1,11 @@
+{
+  "accepted_rows": 0,
+  "evidence_counts": {},
+  "first_decision_timestamp": null,
+  "incompatible_rows": 0,
+  "last_decision_timestamp": null,
+  "rejected_rows": 0,
+  "rejection_reasons": {},
+  "source_path": "data/calibration/observations.jsonl",
+  "total_rows": 0
+}

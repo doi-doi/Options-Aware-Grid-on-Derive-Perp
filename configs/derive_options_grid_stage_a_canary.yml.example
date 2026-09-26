@@ -1,0 +1,17 @@
+# DERIVE_OPTIONS_ADAPTIVE_GRID_MANAGED
+# Safe template: it can only capture a read-only preflight and then stop.
+script_file_name: derive_options_grid_mainnet_lifecycle_canary.py
+controllers_config: []
+exchange: derive_perpetual
+trading_pair: SOL-USDC
+mode: DRY_RUN
+side: BUY
+operator_confirmed: false
+stage_authorization: NONE
+one_run_token: ""
+one_run_token_sha256: ""
+max_bbo_age_seconds: 10.0
+stage_a_maker_guard_ticks: 5
+stage_a_maker_guard_bps: '15'
+create_timeout_seconds: 30.0
+cancel_timeout_seconds: 30.0

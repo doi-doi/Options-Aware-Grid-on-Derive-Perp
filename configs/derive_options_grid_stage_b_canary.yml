@@ -1,0 +1,19 @@
+# DERIVE_OPTIONS_ADAPTIVE_GRID_MANAGED
+# This installed Condor configuration is intentionally unable to trade.
+script_file_name: derive_options_grid_mainnet_stage_b_canary.py
+controllers_config: []
+exchange: derive_perpetual
+trading_pair: SOL-USDC
+mode: DRY_RUN
+open_side: BUY
+operator_confirmed: false
+stage_authorization: NONE
+one_run_token: ""
+one_run_token_sha256: ""
+stage_a_result_sha256: ""
+max_bbo_age_seconds: 10.0
+max_open_slippage_bps: 10
+max_close_slippage_bps: 20
+open_fill_timeout_seconds: 30.0
+cancel_timeout_seconds: 30.0
+close_fill_timeout_seconds: 45.0

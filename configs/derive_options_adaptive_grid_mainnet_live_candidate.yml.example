@@ -1,0 +1,70 @@
+# Reviewed live-candidate template. This file is intentionally non-executable:
+# a separate canary review must set any execution gate explicitly.
+id: derive_options_adaptive_grid_sol_live_candidate
+controller_name: derive_options_adaptive_grid
+controller_type: market_making
+connector_name: derive_perpetual
+trading_pair: SOL-USDC
+exchange_instrument: SOL-PERP
+environment: mainnet
+position_mode: ONEWAY
+leverage: 1
+
+mainnet_armed: false
+execution_enabled: false
+manual_kill_switch: false
+oneway_side: BUY
+
+capital_allocation_mode: DYNAMIC_AVAILABLE
+capital_reserve_pct: '0.20'
+capital_reserve_quote: '20'
+capital_utilization_pct: '0.50'
+capital_fee_buffer_pct: '0.02'
+capital_fee_buffer_quote: '5'
+hard_position_multiplier: '1.25'
+min_profit_buffer_bps: '2'
+
+aggressive_enter_ratio: 0.85
+aggressive_exit_ratio: 0.95
+aggressive_half_width_pct: '0.0075'
+aggressive_levels: 7
+aggressive_total_quote: '100'
+total_amount_quote: '100'
+defensive_total_quote: '60'
+min_order_amount_quote: '5'
+min_quote_increment: '0.01'
+max_position_quote: '50'
+hard_position_quote: '75'
+minimum_available_collateral_quote: '100'
+max_order_notional_quote: '100'
+
+normal_half_width_pct: '0.010'
+defensive_half_width_pct: '0.025'
+normal_levels: 5
+defensive_levels: 3
+activation_bounds_pct: '0.025'
+order_frequency: 5
+max_orders_per_batch: 1
+min_spread_between_orders: '0.0005'
+safe_extra_spread: '0.0001'
+take_profit_pct: '0.001'
+time_limit_seconds: null
+
+connector_close_semantics_verified: false
+connector_post_only_semantics_verified: false
+connector_lifecycle_verified: false
+
+max_perp_age_seconds: 10
+max_option_data_age_seconds: 15
+future_tolerance_seconds: 2
+options_refresh_interval_seconds: 5
+state_min_history: 5
+state_max_history: 120
+high_enter_ratio: 1.25
+high_exit_ratio: 1.12
+extreme_enter_ratio: 1.60
+extreme_exit_ratio: 1.35
+price_tolerance_bps: '25'
+amount_tolerance_pct: '0.10'
+max_executor_age_seconds: 1800
+evidence_max_records: 200
